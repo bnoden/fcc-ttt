@@ -1,0 +1,123 @@
+body{
+	background:#31383D;
+	color:#666;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1{
+	text-align:center;
+	color:#fff;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	width:350px;
+	overflow:auto;
+	margin:10px auto;
+	background:#5E94D1;
+	padding-bottom:20px;
+	border-radius:10px;
+}
+
+#wins {
+	width: 50px;
+	float:right;
+	margin-top: 5px;
+	margin-right: 55px;
+}
+
+#players {
+	width: 100px;
+	float:left;
+	margin-top: 5px;
+	margin-left: 55px;
+}
+
+#players, #wins {
+	font-family: 'Permanent Marker', cursive;
+	font-size:15px;
+	background:#31383D;
+	color:#eee;
+	padding:15px;
+	border-radius:5px;
+	
+}
+
+#board li{
+	float:left;
+	margin:10px;
+	height:70px;
+	width:70px;
+	font-family: 'Permanent Marker', cursive;
+	font-size:55px;
+	background:#31383D;
+	color:#ccc;
+	list-style:none;
+	text-align:center;
+	border-radius:5px;
+}
+
+#board li:hover{
+	cursor:pointer;
+	background:#75B0D9;
+}
+
+#reset {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:25px;
+	border:0;
+	background:#D15E5E;
+	color:#fff;
+	width:70%;
+	padding:5px;
+	border-radius:5px;
+}
+
+#reset:hover{
+	background:#EBB5B5;
+}
+
+#ex, #oh {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:25px;
+	border:0;
+	background:#5ED162;
+	color:#fff;
+	width:35%;
+	padding:15px;
+	border-radius:5px;
+}
+
+#ex {
+	background:#D15E5E;
+}
+
+#oh {
+	background:#5ED162;
+}
+
+#ex:hover {
+	background:#A32A2A;
+}
+
+#oh:hover {
+	background:#2AA32F;
+	
+}
+
+.O {
+	color:#5ED162 !important;
+}
+
+.X {
+	color:#D15E5E !important;
+}
+
+footer{
+	display:block;
+	text-align:center;
+	padding-top:10px;
+}
