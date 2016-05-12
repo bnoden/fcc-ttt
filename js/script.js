@@ -27,14 +27,18 @@ $(document).ready(function () {
   $('#ex').on('click', function () {
     player = 'X', computer = 'O';
     $('#player1').html('Player: X');
+    $('#player1').css("color", "#BA4545");
     $('#computer').html('Computer: O');
+    $('#computer').css("color", "#51BA45");
     choose();
   });
 
   $('#oh').on('click', function () {
     player = 'O', computer = 'X';
     $('#player1').html('Player: O');
+    $('#player1').css("color", "#51BA45");
     $('#computer').html('Computer: X');
+    $('#computer').css("color", "#BA4545");
     choose();
   });
 
@@ -79,6 +83,7 @@ $(document).ready(function () {
     $('#choice').show('normal');
     $('#hud').hide('normal');
     info.html("tic tac toe");
+    info.css("color", "#eee");
   };
 
   function updateScore() {
@@ -135,6 +140,7 @@ $(document).ready(function () {
 
   function youWin() {
     info.html("YOU WON!");
+    info.css("color", "#51BA45")
     win++;
     updateScore();
     gameOver();
@@ -142,6 +148,7 @@ $(document).ready(function () {
 
   function youLose() {
     info.html("YOU LOST!");
+    info.css("color", "#BA4545");
     lose++
     updateScore();
     gameOver();
