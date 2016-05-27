@@ -1,16 +1,23 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Play Tic Tac Toe</title>
 		<link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+		<style>
+	</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/script.js"></script>
 	</head>
 	<body>
-	<h1 id="info"></h1>
+	<div id="boot">
+				<img id="titlecard0">
+				<img id="titlecard1">
+				<img id="titlecard2">
+			</div>
 		<div id="container">
+				<p id="info"></p>
 			<div id="spaces">
 				<ul id="board">
 					<li id="s1"></li>
@@ -24,11 +31,18 @@
 					<li id="s9"></li>
 				</ul>
 			</div>
+			<div id="action">
+				
+			</div>
 			<div class="clearfix"></div>
 			<footer>
 				<div id="choice">
+					
 					<button id="ex">X</button>
 					<button id="oh">O</button>
+					<label for="name">
+					  <input type="text" id="name" placeholder="Name" maxlength="18" required/>
+				  </label>
 				</div>
 					<div id="new">
 					<button id="reset">new game</button>
@@ -36,8 +50,8 @@
 			
 				<div id="hud">
 					<div id="players">
-						<div id="player1"></div>
-						<div id="computer"></div>
+						<div id="hero"><input type="text" id="player1" maxlength="18"/><div id="myHP"></div></div>
+						<div id="cpu"><div id="cpuHP"></div></div>
 					</div>
 					<div id="wins"></div>
 

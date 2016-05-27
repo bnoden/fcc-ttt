@@ -1,11 +1,16 @@
+#titlecard0, #titlecard1, #titlecard2 {
+	position: absolute;
+    top:0; left:0;
+	width: 100%;
+}
+
 body{
 	background:#333;
-	color:#666;
 	font-family: 'Gloria Hallelujah', cursive;
 }
 
-h1{
-	font-size: 25px;
+#info{
+	font-size: 16px;
 	text-align:center;
 	color:#fff;
 }
@@ -22,29 +27,14 @@ h1{
 	border-radius:5px;
 }
 
-#wins {
-	width: 35px;
-	font-size:10px;
-	color: #4580BA;
-	text-align: left;
-	float:right;
-	margin-top: 5px;
-	margin-right: 55px;
+#action {
+	position: absolute;
+    top: 50;
+	width: 270px;
 }
 
-#players {
-	width: 100px;
-	font-size:15px;
-	float:left;
-	margin-top: 5px;
-	margin-left: 55px;
-}
-
-#players, #wins {
-	font-family: 'Permanent Marker', cursive;
-	padding:5px;
-	border-radius:5px;
-	
+#action img {
+	width: 100%;
 }
 
 #board li{
@@ -55,25 +45,21 @@ h1{
 	font-family: 'Permanent Marker', cursive;
 	font-size:45px;
 	background:#333;
-	color:#ccc;
 	list-style:none;
 	text-align:center;
 	border-style: solid;
-	border-color: #eee;
 }
 
 #board li:hover{
 	cursor:pointer;
-	background:#555;
-	border-radius: 32px 32px 32px 32px;
-	border-color: #666;
+	background:#3D4F3B;
 }
 
 #reset {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size:15px;
 	border:0;
-	background:#D15E5E;
+	background:#459964;
 	color:#fff;
 	width:65%;
 	padding:5px;
@@ -81,26 +67,28 @@ h1{
 }
 
 #reset:hover{
-	background:#EBB5B5;
+	background:#A32A2A;
 }
 
 #ex, #oh {
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size:40px;
+	font-size:30px;
 	border:0;
-	background:#5ED162;
-	color:#fff;
-	width:35%;
-	padding:15px;
-	border-radius:5px;
+	
+	width:95.21px;
+	height: 60px;
+	
 }
 
 #ex {
-	background:#D15E5E;
+	background:#fff;
+	color:#369C55;
+
 }
 
 #oh {
-	background:#5ED162;
+	background:#369C55;
+	color:#fff;
 }
 
 #ex:hover {
@@ -110,14 +98,6 @@ h1{
 #oh:hover {
 	background:#2AA32F;
 	
-}
-
-.O {
-	color:#5ED162 !important;
-}
-
-.X {
-	color:#D15E5E !important;
 }
 
 footer{
@@ -140,4 +120,48 @@ footer{
 
 #s1, #s4, #s7 {
 	border-left-width: 0px;
+}
+
+
+
+#name {
+	width: 71.36%;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 40px;
+	color:#369C55;
+}
+
+#player1, #cpu {
+	background: #333;
+	width: 100%;
+	text-align: left;
+	border-width: 0px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+#players {
+	width: 70%;
+	font-size:16px;
+	float:left;
+	margin-top: 5px;
+	margin-left: 55px;
+}
+
+#players, #wins {
+	
+	padding:5px;
+	border-radius:5px;
+	
+}
+
+#wins {
+	font-family: 'Permanent Marker', cursive;
+	width: 25px;
+	font-size:12px;
+	color: #eee;
+	text-align: left;
+	float:right;
+	margin-top: 5px;
+	margin-right: 55px;
 }
